@@ -1,0 +1,2656 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="'width=device-width, initial scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Приложение приютов</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+    <link rel="json" href="{% static 'json/cats.json' %}">
+</head>
+<body>
+<div class="container mt-5">
+        <div class="row">
+            <div class="col-5 offset-4">
+                <h1 class="title">Список котов</h1>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="col-lg-10 offset-1">
+			<table border=1>
+				<thead>
+					<tr>
+						<th>name</th>
+						<th>photo</th>
+						<th>age</th>
+						<th>gender</th>
+						<th>vetpasport</th>
+						<th>lotok</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Котофейкин</td>
+						<td><a href="index.html"><img src="https://murkosha.ru/media/k2/items/cache/da76eb829ca6d58aa440fe7e816f41a3_XL.jpg" width="100"
+   height="100"></a></td>
+						<td>Возраст - 7 месяцев</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Киша</td>
+						<td><a href="index.html"><img src="https://murkosha.ru/media/k2/items/cache/d119d9405a373aa94e5f59224855e650_XL.jpg" width="100"
+   height="100"></a></td>
+						<td>Возраст - 2 года</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Василисочка</td>
+						<td><a href="index.html"><img src="https://murkosha.ru/media/k2/items/cache/f71c3383fcb11eb303282bc99a9d5d80_XL.jpg" width="100"
+   height="100"></a></td>
+						<td>Возраст - 3 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Федора</td>
+						<td><a href="index.html"><img src="https://murkosha.ru/media/k2/items/cache/d9fe907157a843b84644c1e17f25589f_XL.jpg" width="100"
+   height="100"></a></td>
+						<td>Возраст - 2 месяца</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Ирис</td>
+						<td><a href="index.html"><img src="https://murkosha.ru/media/k2/items/cache/dd972305b74fa480210824b75cc553b6_XL.jpg" width="100"
+   height="100"></a></td>
+						<td>Возраст - 1 год</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Лезгинка</td>
+						<td><a href="index.html"><img src="https://murkosha.ru/media/k2/items/cache/61087961d26794eb1df2d385db5e216c_XL.jpg" width="100"
+   height="100"></a></td>
+						<td>Возраст - 1 месяц</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Мэрри</td>
+						<td>/laskovie-koshki-i-kotyata/8904-merri</td>
+						<td>Возраст - 2 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Нюрочка</td>
+						<td>/kotyata/8902-nyurochka</td>
+						<td>Возраст - 3 месяца</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Балуша</td>
+						<td>/kotyata/8900-balusha</td>
+						<td>Возраст - 2 месяца</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Сесилия</td>
+						<td>/laskovie-koshki-i-kotyata/8898-sesiliya</td>
+						<td>Возраст - 2 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Ушко</td>
+						<td>/laskovie-koshki-i-kotyata/8891-ushko</td>
+						<td>Возраст - 2 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Сироп</td>
+						<td>/laskovie-koshki-i-kotyata/8889-sirop</td>
+						<td>Возраст - 2 года</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Румба</td>
+						<td>/kotyata/8886-rumba</td>
+						<td>Возраст - 5 месяцев</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Верона</td>
+						<td>/laskovie-koshki-i-kotyata/8884-verona</td>
+						<td>Возраст - 3 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Бачата</td>
+						<td>/kotyata/8882-bachata</td>
+						<td>Возраст - 2 месяца</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Магнезия</td>
+						<td>/laskovie-koshki-i-kotyata/8879-magneziya</td>
+						<td>Возраст - 3 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Маюми</td>
+						<td>/laskovie-koshki-i-kotyata/8877-mayumi</td>
+						<td>Возраст - 2 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Уська</td>
+						<td>/laskovie-koshki-i-kotyata/8875-uska</td>
+						<td>Возраст - 15 лет</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Блюм</td>
+						<td>/laskovie-koshki-i-kotyata/8873-blyum</td>
+						<td>Возраст - 5 лет</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Миша</td>
+						<td>/laskovie-koshki-i-kotyata/8871-misha</td>
+						<td>Возраст - 2 года</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Ясон</td>
+						<td>/laskovie-koshki-i-kotyata/8868-yason</td>
+						<td>Возраст - 4 года</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Саймон</td>
+						<td>/laskovie-koshki-i-kotyata/8866-sajmon</td>
+						<td>Возраст - 2 года</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Отличник</td>
+						<td>/laskovie-koshki-i-kotyata/8864-otlichnik</td>
+						<td>Возраст - 3 года</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Мадам</td>
+						<td>/kotyata/8862-madam</td>
+						<td>Возраст - 4 месяца</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Ева</td>
+						<td>/laskovie-koshki-i-kotyata/8860-eva</td>
+						<td>Возраст - 2 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Механик</td>
+						<td>/kotyata/8915-mekhanik</td>
+						<td>Возраст - 2 месяца</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Мурана</td>
+						<td>/laskovie-koshki-i-kotyata/8913-murana</td>
+						<td>Возраст - 5 лет</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Митя</td>
+						<td>/laskovie-koshki-i-kotyata/8911-2-goda</td>
+						<td>Возраст - 2 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Девчуля</td>
+						<td>/kotyata/8909-devchulya</td>
+						<td>Возраст - 10 месяцев</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Санечка</td>
+						<td>/kotyata/8907-sanechka</td>
+						<td>Возраст - 2 месяца</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Шнурок</td>
+						<td>/kotyata/8905-shnurok</td>
+						<td>Возраст - 3 месяца</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Либе</td>
+						<td>/kotyata/8903-libe</td>
+						<td>Возраст - 2 месяца</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Рахель</td>
+						<td>/laskovie-koshki-i-kotyata/8901-rakhel</td>
+						<td>Возраст - 5 лет</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Гришенька</td>
+						<td>/kotyata/8899-grishenka</td>
+						<td>Возраст - 1,5 месяца</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Винипушик</td>
+						<td>/laskovie-koshki-i-kotyata/8892-vinipushik</td>
+						<td>Возраст - 7 лет</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Густав</td>
+						<td>/laskovie-koshki-i-kotyata/8890-gustav</td>
+						<td>Возраст - 2 года</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Огайо</td>
+						<td>/kotyata/8887-ogajo</td>
+						<td>Возраст - 3 месяца</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Бриан</td>
+						<td>/laskovie-koshki-i-kotyata/8885-brian</td>
+						<td>Возраст - 7 лет</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Люсьен</td>
+						<td>/laskovie-koshki-i-kotyata/8883-lyusen</td>
+						<td>Возраст - 4 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Марика</td>
+						<td>/laskovie-koshki-i-kotyata/8880-marika</td>
+						<td>Возраст - 6 лет</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Бася</td>
+						<td>/laskovie-koshki-i-kotyata/8878-basya</td>
+						<td>Возраст - 9 лет</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Туман</td>
+						<td>/laskovie-koshki-i-kotyata/8876-tuman</td>
+						<td>Возраст - 2 года</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Самба</td>
+						<td>/kotyata/8874-samba</td>
+						<td>Возраст - 1 месяц</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Флорида</td>
+						<td>/laskovie-koshki-i-kotyata/8872-florida</td>
+						<td>Возраст - 2 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Долорес</td>
+						<td>/laskovie-koshki-i-kotyata/8870-dolores</td>
+						<td>Возраст - 1 год</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Стейси</td>
+						<td>/laskovie-koshki-i-kotyata/8867-stejsi</td>
+						<td>Возраст - 1 год</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Белка</td>
+						<td>/laskovie-koshki-i-kotyata/8865-belka</td>
+						<td>Возраст - 4 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Алиса</td>
+						<td>/laskovie-koshki-i-kotyata/8863-alisa</td>
+						<td>Возраст - 2 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Кристал</td>
+						<td>/laskovie-koshki-i-kotyata/8861-kristal</td>
+						<td>Возраст - 1 год</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Алисонька</td>
+						<td>/laskovie-koshki-i-kotyata/8858-alisonka</td>
+						<td>Возраст - 3 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Настюша</td>
+						<td>/laskovie-koshki-i-kotyata/8857-nastyusha</td>
+						<td>Возраст - 1,5 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Сиеста</td>
+						<td>/kotyata/8847-siesta</td>
+						<td>Возраст - 7 месяцев</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Эмиль</td>
+						<td>/kotyata/8845-emil</td>
+						<td>Возраст - 3 месяца</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Джакарта</td>
+						<td>/laskovie-koshki-i-kotyata/8843-dzhakarta</td>
+						<td>Возраст - 5 лет</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Арония</td>
+						<td>/kotyata/8841-aroniya</td>
+						<td>Возраст - 10 месяцев</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Топаз</td>
+						<td>/laskovie-koshki-i-kotyata/8839-topaz</td>
+						<td>Возраст - 5 лет</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Мексика</td>
+						<td>/kotyata/8837-meksika</td>
+						<td>Возраст - 2 месяца</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Боско</td>
+						<td>/laskovie-koshki-i-kotyata/8835-bosko</td>
+						<td>Возраст - 2 года</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Груша</td>
+						<td>/laskovie-koshki-i-kotyata/8833-grusha</td>
+						<td>Возраст - 2 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Крузя</td>
+						<td>/kotyata/8830-kruzya</td>
+						<td>Возраст - 2 месяца</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Валенсия</td>
+						<td>/laskovie-koshki-i-kotyata/8828-valensiya</td>
+						<td>Возраст - 5 лет</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Пухлик</td>
+						<td>/kotyata/8826-pukhlik</td>
+						<td>Возраст - 4 месяца</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Тамара</td>
+						<td>/laskovie-koshki-i-kotyata/8824-tamara</td>
+						<td>Возраст - 4 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Гуля</td>
+						<td>/laskovie-koshki-i-kotyata/8822-gulya</td>
+						<td>Возраст - 8 лет</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Ириска</td>
+						<td>/laskovie-koshki-i-kotyata/8820-iriska</td>
+						<td>Возраст - 2 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Хиппи</td>
+						<td>/laskovie-koshki-i-kotyata/8818-khippi</td>
+						<td>Возраст - 8 лет</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Кусочек</td>
+						<td>/laskovie-koshki-i-kotyata/8815-kusochek</td>
+						<td>Возраст - 2 года</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Арсений</td>
+						<td>/laskovie-koshki-i-kotyata/8813-arsenij</td>
+						<td>Возраст - 11 лет</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Ёсик</td>
+						<td>/laskovie-koshki-i-kotyata/8811-josik</td>
+						<td>Возраст - 10 лет</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Франсуаза</td>
+						<td>/laskovie-koshki-i-kotyata/8809-fransuaza</td>
+						<td>Возраст - 4 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Смайлик</td>
+						<td>/kotyata/8795-smajlik</td>
+						<td>Возраст - 2 месяца</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Бомба</td>
+						<td>/laskovie-koshki-i-kotyata/8793-bomba</td>
+						<td>Возраст - 1 год</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Кларисса</td>
+						<td>/laskovie-koshki-i-kotyata/8789-klarissa</td>
+						<td>Возраст - 5 лет</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Суматра</td>
+						<td>/kotyata/8787-sumatra</td>
+						<td>Возраст - 3 месяца</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Норин</td>
+						<td>/laskovie-koshki-i-kotyata/8785-norin</td>
+						<td>Возраст - 1 год</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Барсик</td>
+						<td>/laskovie-koshki-i-kotyata/8848-barsik</td>
+						<td>Возраст - 7 лет</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Рэйгаль</td>
+						<td>/kotyata/8846-rejgal</td>
+						<td>Возраст - 3 месяца</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Зигги</td>
+						<td>/laskovie-koshki-i-kotyata/8844-ziggi</td>
+						<td>Возраст - 2 года</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Эмма</td>
+						<td>/laskovie-koshki-i-kotyata/8842-emma</td>
+						<td>Возраст - 1 год</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Тыковка</td>
+						<td>/kotyata/8840-tykovka</td>
+						<td>Возраст - 8 месяцев</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Барселона</td>
+						<td>/kotyata/8838-barselona</td>
+						<td>Возраст - 4 месяца</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Инди</td>
+						<td>/kotyata/8836-indi</td>
+						<td>Возраст - 4 месяца</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Пикси</td>
+						<td>/kotyata/8834-piksi</td>
+						<td>Возраст - 2 месяца</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Бемби</td>
+						<td>/laskovie-koshki-i-kotyata/8832-bembi</td>
+						<td>Возраст - 3 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Фиона</td>
+						<td>/laskovie-koshki-i-kotyata/8829-fiona</td>
+						<td>Возраст - 3 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Нюся</td>
+						<td>/laskovie-koshki-i-kotyata/8827-nyusya</td>
+						<td>Возраст - 4 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Ватсон</td>
+						<td>/laskovie-koshki-i-kotyata/8825-vatson</td>
+						<td>Возраст - 14 лет</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Бубочка</td>
+						<td>/laskovie-koshki-i-kotyata/8823-bubochka</td>
+						<td>Возраст - 2 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Бося</td>
+						<td>/laskovie-koshki-i-kotyata/8821-bosya</td>
+						<td>Возраст - 5 лет</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Касабланка</td>
+						<td>/laskovie-koshki-i-kotyata/8819-kasablanka</td>
+						<td>Возраст - 3 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Денди</td>
+						<td>/laskovie-koshki-i-kotyata/8817-dendi</td>
+						<td>Возраст - 1 год</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Артур</td>
+						<td>/laskovie-koshki-i-kotyata/8814-artur</td>
+						<td>Возраст - 1 год</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Лапа</td>
+						<td>/laskovie-koshki-i-kotyata/8812-lapa</td>
+						<td>Возраст - 3 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Рыжик</td>
+						<td>/laskovie-koshki-i-kotyata/8810-ryzhik</td>
+						<td>Возраст - 13 лет</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Лесик</td>
+						<td>/laskovie-koshki-i-kotyata/8796-lesik</td>
+						<td>Возраст - 2 года</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Кроха</td>
+						<td>/kotyata/8794-krokha</td>
+						<td>Возраст - 2 месяца</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Багира</td>
+						<td>/laskovie-koshki-i-kotyata/8790-bagira</td>
+						<td>Возраст - 2 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Марципан</td>
+						<td>/laskovie-koshki-i-kotyata/8788-martsipan</td>
+						<td>Возраст - 1 год</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Скалли</td>
+						<td>/kotyata/8786-skalli</td>
+						<td>Возраст - 11 месяцев</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Орхидея</td>
+						<td>/laskovie-koshki-i-kotyata/8782-orkhideya</td>
+						<td>Возраст - 5 лет</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Муфель</td>
+						<td>/kotyata/8781-mufel</td>
+						<td>Возраст - 7 месяцев</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Масяня</td>
+						<td>/laskovie-koshki-i-kotyata/8779-masyanya</td>
+						<td>Возраст - 6 лет</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Тринидад</td>
+						<td>/laskovie-koshki-i-kotyata/8777-trinidad</td>
+						<td>Возраст - 4 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Воланд</td>
+						<td>/laskovie-koshki-i-kotyata/8775-voland</td>
+						<td>Возраст - 6 лет</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Кротка</td>
+						<td>/laskovie-koshki-i-kotyata/8772-krotka</td>
+						<td>Возраст - 1 год</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Снежа</td>
+						<td>/laskovie-koshki-i-kotyata/8770-snezha</td>
+						<td>Возраст - 3 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Галочка</td>
+						<td>/laskovie-koshki-i-kotyata/8767-galochka</td>
+						<td>Возраст - 1 год</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Жужа</td>
+						<td>/laskovie-koshki-i-kotyata/8765-zhuzha</td>
+						<td>Возраст - 1 год</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Мэтр</td>
+						<td>/laskovie-koshki-i-kotyata/8763-metr</td>
+						<td>Возраст - 5 лет</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Мужчина</td>
+						<td>/laskovie-koshki-i-kotyata/8761-nastoyashchij-muzhchina</td>
+						<td>Возраст - 7 лет</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Рошаль</td>
+						<td>/kotyata/8758-roshal</td>
+						<td>Возраст - 8 месяцев</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Сафон</td>
+						<td>/laskovie-koshki-i-kotyata/8748-safon</td>
+						<td>Возраст - 5 лет</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Магний</td>
+						<td>/laskovie-koshki-i-kotyata/8746-magnij</td>
+						<td>Возраст - 2 года</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Фиджи</td>
+						<td>/kotyata/8744-fidzhi</td>
+						<td>Возраст - 3 месяца</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Осень</td>
+						<td>/laskovie-koshki-i-kotyata/8742-osen</td>
+						<td>Возраст - 7 лет</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Зая</td>
+						<td>/laskovie-koshki-i-kotyata/8740-zaya</td>
+						<td>Возраст - 4 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Динка</td>
+						<td>/laskovie-koshki-i-kotyata/8738-dinka</td>
+						<td>Возраст - 4 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Манефа</td>
+						<td>/laskovie-koshki-i-kotyata/8736-manefa</td>
+						<td>Возраст - 2 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Масюня</td>
+						<td>/laskovie-koshki-i-kotyata/8734-masyunya</td>
+						<td>Возраст - 1 год</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Каптюр</td>
+						<td>/laskovie-koshki-i-kotyata/8732-kaptyur</td>
+						<td>Возраст - 3 года</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Тайга</td>
+						<td>/kotyata/8730-tajga</td>
+						<td>Возраст - 11 месяцев</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Луладджа</td>
+						<td>/laskovie-koshki-i-kotyata/8728-lulladzha</td>
+						<td>Возраст - 3 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Звезда</td>
+						<td>/laskovie-koshki-i-kotyata/8725-zvezda</td>
+						<td>Возраст - 3 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Ксюша</td>
+						<td>/laskovie-koshki-i-kotyata/8723-ksyusha</td>
+						<td>Возраст - 7 лет</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Фрил</td>
+						<td>/laskovie-koshki-i-kotyata/8721-fril</td>
+						<td>Возраст - 2 года</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Кипр</td>
+						<td>/kotyata/8780-kipr</td>
+						<td>Возраст - 3 месяца</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Бразилия</td>
+						<td>/laskovie-koshki-i-kotyata/8778-braziliya</td>
+						<td>Возраст - 5 лет</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Мила</td>
+						<td>/laskovie-koshki-i-kotyata/8776-mila</td>
+						<td>Возраст - 8 лет</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Серебро</td>
+						<td>/laskovie-koshki-i-kotyata/8773-serebro</td>
+						<td>Возраст - 5 лет</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Рысянка</td>
+						<td>/laskovie-koshki-i-kotyata/8771-rysyanka</td>
+						<td>Возраст - 6 лет</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Палитра</td>
+						<td>/kotyata/8769-palitra</td>
+						<td>Возраст - 3 месяца</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Клепа</td>
+						<td>/laskovie-koshki-i-kotyata/8766-klepa</td>
+						<td>Возраст - 4 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Манюня</td>
+						<td>/laskovie-koshki-i-kotyata/8764-manyunya</td>
+						<td>Возраст - 8 лет</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Беата</td>
+						<td>/laskovie-koshki-i-kotyata/8762-beata</td>
+						<td>Возраст - 5 лет</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Флоша</td>
+						<td>/laskovie-koshki-i-kotyata/8759-flosha</td>
+						<td>Возраст - 1 год</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Сынок</td>
+						<td>/kotyata/8750-synok</td>
+						<td>Возраст - 2 месяца</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Еремей</td>
+						<td>/laskovie-koshki-i-kotyata/8747-eremej</td>
+						<td>Возраст - 2 года</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Аргентина</td>
+						<td>/laskovie-koshki-i-kotyata/8745-argentina</td>
+						<td>Возраст - 2 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Джованни</td>
+						<td>/laskovie-koshki-i-kotyata/8743-dzhovanni</td>
+						<td>Возраст - 1 год</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Яшка</td>
+						<td>/laskovie-koshki-i-kotyata/8741-yashka</td>
+						<td>Возраст - 2 года</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Мабл</td>
+						<td>/laskovie-koshki-i-kotyata/8739-mabl</td>
+						<td>Возраст - 1 год</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Либи</td>
+						<td>/laskovie-koshki-i-kotyata/8737-libi</td>
+						<td>Возраст - 2 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Бэйби</td>
+						<td>/laskovie-koshki-i-kotyata/8735-bejbi</td>
+						<td>Возраст - 5 лет</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Маковка</td>
+						<td>/laskovie-koshki-i-kotyata/8733-makovka</td>
+						<td>Возраст - 4 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Масильда</td>
+						<td>/laskovie-koshki-i-kotyata/8731-masilda</td>
+						<td>Возраст - 9 лет</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Кабачок</td>
+						<td>/laskovie-koshki-i-kotyata/8729-kabachok</td>
+						<td>Возраст - 1 год</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Бриджит</td>
+						<td>/laskovie-koshki-i-kotyata/8727-bridzhit</td>
+						<td>Возраст - 4 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Есения</td>
+						<td>/laskovie-koshki-i-kotyata/8724-eseniya</td>
+						<td>Возраст - 5 лет</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Мусена</td>
+						<td>/laskovie-koshki-i-kotyata/8722-musena</td>
+						<td>Возраст - 5 лет</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Монтана</td>
+						<td>/laskovie-koshki-i-kotyata/8720-montana</td>
+						<td>Возраст - 5 лет</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Ботти</td>
+						<td>/laskovie-koshki-i-kotyata/8719-botti</td>
+						<td>Возраст - 3 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Басяша</td>
+						<td>/laskovie-koshki-i-kotyata/8717-basyasha</td>
+						<td>Возраст - 1 год</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Гарри</td>
+						<td>/laskovie-koshki-i-kotyata/8714-garri</td>
+						<td>Возраст - 4 года</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Криста</td>
+						<td>/laskovie-koshki-i-kotyata/8712-krista</td>
+						<td>Возраст - 3 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Дакки</td>
+						<td>/kotyata/8707-dakki</td>
+						<td>Возраст - 10 месяцев</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Робинзон</td>
+						<td>/laskovie-koshki-i-kotyata/8705-robinzon</td>
+						<td>Возраст - 6 лет</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Твиши</td>
+						<td>/kotyata/8703-tvishi</td>
+						<td>Возраст - 9 месяцев</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Облепиховый</td>
+						<td>/laskovie-koshki-i-kotyata/8701-oblepikhovyj</td>
+						<td>Возраст - 1 год</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Шура</td>
+						<td>/kotyata/8699-shura</td>
+						<td>Возраст - 5 месяцев</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Эвелина</td>
+						<td>/laskovie-koshki-i-kotyata/8697-evelina</td>
+						<td>Возраст - 4 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Эстер</td>
+						<td>/laskovie-koshki-i-kotyata/8694-ester</td>
+						<td>Возраст - 4 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Джанго</td>
+						<td>/laskovie-koshki-i-kotyata/8692-dzhango</td>
+						<td>Возраст - 5 лет</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Клякса</td>
+						<td>/laskovie-koshki-i-kotyata/8690-klyaksa</td>
+						<td>Возраст - 3 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Теффиса</td>
+						<td>/kotyata/8687-teffisa</td>
+						<td>Возраст - 7 месяцев</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Сати</td>
+						<td>/laskovie-koshki-i-kotyata/8676-sati</td>
+						<td>Возраст - 12 лет</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Афродита</td>
+						<td>/laskovie-koshki-i-kotyata/8674-afrodita</td>
+						<td>Возраст - 6 лет</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Ломтик</td>
+						<td>/laskovie-koshki-i-kotyata/8672-lomtik</td>
+						<td>Возраст - 2 года</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Терракота</td>
+						<td>/laskovie-koshki-i-kotyata/8669-terrakota</td>
+						<td>Возраст - 2 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Хаврош</td>
+						<td>/laskovie-koshki-i-kotyata/8665-khavrosh</td>
+						<td>Возраст - 3 года</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Пепитта</td>
+						<td>/laskovie-koshki-i-kotyata/8663-pepitta</td>
+						<td>Возраст - 5 лет</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Агава</td>
+						<td>/laskovie-koshki-i-kotyata/8652-agava</td>
+						<td>Возраст - 3 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Данек</td>
+						<td>/laskovie-koshki-i-kotyata/8649-danek</td>
+						<td>Возраст - 1 год</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Джинджер</td>
+						<td>/kotyata/8647-dzhindzher</td>
+						<td>Возраст - 9 месяцев</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Валли</td>
+						<td>/laskovie-koshki-i-kotyata/8645-valli</td>
+						<td>Возраст - 4 года</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Мигель</td>
+						<td>/laskovie-koshki-i-kotyata/8641-migel</td>
+						<td>Возраст - 1 год</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Пышка</td>
+						<td>/laskovie-koshki-i-kotyata/8718-pyshka</td>
+						<td>Возраст - 4 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Амора</td>
+						<td>/laskovie-koshki-i-kotyata/8716-amora</td>
+						<td>Возраст - 2 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Мэллори</td>
+						<td>/kotyata/8713-mellori</td>
+						<td>Возраст - 5 месяцев</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Этерия</td>
+						<td>/laskovie-koshki-i-kotyata/8710-eteriya</td>
+						<td>Возраст - 3 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Лена</td>
+						<td>/laskovie-koshki-i-kotyata/8706-lena</td>
+						<td>Возраст - 6 лет</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Айлин</td>
+						<td>/laskovie-koshki-i-kotyata/8704-ajlin</td>
+						<td>Возраст - 2 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Умняша</td>
+						<td>/laskovie-koshki-i-kotyata/8702-umnyasha</td>
+						<td>Возраст - 2 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Шухер</td>
+						<td>/laskovie-koshki-i-kotyata/8700-shukher</td>
+						<td>Возраст - 1 год</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Тошечка</td>
+						<td>/kotyata/8698-toshechka</td>
+						<td>Возраст - 2 месяца</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Пинки Пай</td>
+						<td>/kotyata/8695-pinki-paj</td>
+						<td>Возраст - 8 месяцев</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Марта</td>
+						<td>/laskovie-koshki-i-kotyata/8693-marta</td>
+						<td>Возраст - 5 лет</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Мадонна</td>
+						<td>/laskovie-koshki-i-kotyata/8691-madonna</td>
+						<td>Возраст - 2 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Фенечка</td>
+						<td>/laskovie-koshki-i-kotyata/8689-fenechka</td>
+						<td>Возраст - 3 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Марис</td>
+						<td>/laskovie-koshki-i-kotyata/8686-maris</td>
+						<td>Возраст - 1 год</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Кася</td>
+						<td>/laskovie-koshki-i-kotyata/8675-kasya</td>
+						<td>Возраст - 10 лет</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Катос</td>
+						<td>/laskovie-koshki-i-kotyata/8673-katos</td>
+						<td>Возраст - 2 года</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Искандер</td>
+						<td>/laskovie-koshki-i-kotyata/8670-iskander</td>
+						<td>Возраст - 4 года</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Няня</td>
+						<td>/laskovie-koshki-i-kotyata/8668-nyanya</td>
+						<td>Возраст - 2 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Кюри</td>
+						<td>/laskovie-koshki-i-kotyata/8664-kyuri</td>
+						<td>Возраст - 3 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Грэйни</td>
+						<td>/laskovie-koshki-i-kotyata/8653-grejni</td>
+						<td>Возраст - 90251</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Тихомир</td>
+						<td>/laskovie-koshki-i-kotyata/8651-tikhomir</td>
+						<td>Возраст - 4 года</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Одесса</td>
+						<td>/laskovie-koshki-i-kotyata/8648-odessa</td>
+						<td>Возраст - 1 год</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Марго</td>
+						<td>/laskovie-koshki-i-kotyata/8646-margo</td>
+						<td>Возраст - 3 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Фрай</td>
+						<td>/laskovie-koshki-i-kotyata/8642-fraj</td>
+						<td>Возраст - 1 год</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Матильда</td>
+						<td>/laskovie-koshki-i-kotyata/8640-matilda</td>
+						<td>Возраст - 4 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Скитлс</td>
+						<td>/laskovie-koshki-i-kotyata/8639-skitls</td>
+						<td>Возраст - 2 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Маруся</td>
+						<td>/kotyata/8637-marusya</td>
+						<td>Возраст - 8 месяцев</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Казантип</td>
+						<td>/laskovie-koshki-i-kotyata/8634-kazantip</td>
+						<td>Возраст - 2 года</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Бариста</td>
+						<td>/kotyata/8630-barista</td>
+						<td>Возраст - 5 месяцев</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Мяуля</td>
+						<td>/kotyata/8627-myaulya</td>
+						<td>Возраст - 6 месяца</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Антонио</td>
+						<td>/laskovie-koshki-i-kotyata/8623-antonio</td>
+						<td>Возраст - 1 год</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Алита</td>
+						<td>/laskovie-koshki-i-kotyata/8621-alita</td>
+						<td>Возраст - 2 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Клуни</td>
+						<td>/laskovie-koshki-i-kotyata/8619-kluni</td>
+						<td>Возраст - 4 года</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Чампа</td>
+						<td>/laskovie-koshki-i-kotyata/8613-champa</td>
+						<td>Возраст - 4 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Миля</td>
+						<td>/laskovie-koshki-i-kotyata/8610-milya</td>
+						<td>Возраст - 19 лет</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Алёнушка</td>
+						<td>/laskovie-koshki-i-kotyata/8608-aljonushka</td>
+						<td>Возраст - 1 год</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Йога</td>
+						<td>/kotyata/8595-joga</td>
+						<td>Возраст - 9 месяцев</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Алекс</td>
+						<td>/kotyata/8593-aleks</td>
+						<td>Возраст - 9 месяцев</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Сирениус</td>
+						<td>/laskovie-koshki-i-kotyata/8591-siren</td>
+						<td>Возраст - 1 год</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Сенечка</td>
+						<td>/laskovie-koshki-i-kotyata/8587-senechka</td>
+						<td>Возраст - 2 года</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Конрадо</td>
+						<td>/laskovie-koshki-i-kotyata/8583-konrado</td>
+						<td>Возраст - 3 года</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Мирослава</td>
+						<td>/laskovie-koshki-i-kotyata/8576-miroslava</td>
+						<td>Возраст - 3 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Монсти</td>
+						<td>/laskovie-koshki-i-kotyata/8574-monsti</td>
+						<td>Возраст - 3 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Бандитка</td>
+						<td>/laskovie-koshki-i-kotyata/8565-banditka</td>
+						<td>Возраст - 4 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Порш</td>
+						<td>/laskovie-koshki-i-kotyata/8559-porsh</td>
+						<td>Возраст - 3 года</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Шеннен</td>
+						<td>/laskovie-koshki-i-kotyata/8546-shennen</td>
+						<td>Возраст - 3 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Лизонька</td>
+						<td>/laskovie-koshki-i-kotyata/8542-lizonka</td>
+						<td>Возраст - 3 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Лика</td>
+						<td>/laskovie-koshki-i-kotyata/8539-lika</td>
+						<td>Возраст - 2 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Веточка</td>
+						<td>/laskovie-koshki-i-kotyata/8533-vetochka</td>
+						<td>Возраст - 2 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Титан</td>
+						<td>/laskovie-koshki-i-kotyata/8530-titan</td>
+						<td>Возраст - 5 лет</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Полумна</td>
+						<td>/laskovie-koshki-i-kotyata/8638-polumna</td>
+						<td>Возраст - 2 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Ялта</td>
+						<td>/laskovie-koshki-i-kotyata/8635-yalta</td>
+						<td>Возраст - 1 год</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Персик</td>
+						<td>/laskovie-koshki-i-kotyata/8633-persik</td>
+						<td>Возраст - 2 года</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Фифика</td>
+						<td>/kotyata/8628-fifika</td>
+						<td>Возраст - 1 месяц</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Малышка</td>
+						<td>/laskovie-koshki-i-kotyata/8624-malyshka</td>
+						<td>Возраст - 1,5 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Вилли</td>
+						<td>/laskovie-koshki-i-kotyata/8622-villi</td>
+						<td>Возраст - 3 года</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Августина</td>
+						<td>/laskovie-koshki-i-kotyata/8620-avgustina</td>
+						<td>Возраст - 1 год</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Мира</td>
+						<td>/laskovie-koshki-i-kotyata/8617-mira</td>
+						<td>Возраст - 2 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Марти</td>
+						<td>/laskovie-koshki-i-kotyata/8611-marti</td>
+						<td>Возраст - 3 года</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Монетка</td>
+						<td>/laskovie-koshki-i-kotyata/8609-monetka</td>
+						<td>Возраст - 1 год</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Цикада</td>
+						<td>/kotyata/8596-tsikada</td>
+						<td>Возраст - 10 месяцев</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Бумбокс</td>
+						<td>/laskovie-koshki-i-kotyata/8594-bumboks</td>
+						<td>Возраст - 3 года</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Дукат</td>
+						<td>/kotyata/8592-dukat</td>
+						<td>Возраст - 3  месяца</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Лучано</td>
+						<td>/laskovie-koshki-i-kotyata/8589-luchano</td>
+						<td>Возраст - 2 года</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Нюшенька</td>
+						<td>/laskovie-koshki-i-kotyata/8586-nyushenka</td>
+						<td>Возраст - 2 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Кукуруза</td>
+						<td>/laskovie-koshki-i-kotyata/8582-kukuruza</td>
+						<td>Возраст - 1 год</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Кифисия</td>
+						<td>/laskovie-koshki-i-kotyata/8575-kifisiya</td>
+						<td>Возраст - 1 год</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Павлина</td>
+						<td>/laskovie-koshki-i-kotyata/8570-pavlina</td>
+						<td>Возраст - 1 год</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Ньютон</td>
+						<td>/laskovie-koshki-i-kotyata/8560-nyuton</td>
+						<td>Возраст - 1 год</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Роман</td>
+						<td>/laskovie-koshki-i-kotyata/8548-roman</td>
+						<td>Возраст - 6 лет</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Арабика</td>
+						<td>/laskovie-koshki-i-kotyata/8543-arabika</td>
+						<td>Возраст - 5 лет</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Геката</td>
+						<td>/laskovie-koshki-i-kotyata/8541-gekata</td>
+						<td>Возраст - 4 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Макс</td>
+						<td>/laskovie-koshki-i-kotyata/8536-maks</td>
+						<td>Возраст - 3 года</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Лайма</td>
+						<td>/laskovie-koshki-i-kotyata/8531-lajma</td>
+						<td>Возраст - 6 лет</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Пенелопа</td>
+						<td>/laskovie-koshki-i-kotyata/8529-penelopa</td>
+						<td>Возраст - 3 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Бэтмен</td>
+						<td>/laskovie-koshki-i-kotyata/8528-betmen</td>
+						<td>Возраст - 4 года</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Боровичок</td>
+						<td>/laskovie-koshki-i-kotyata/8521-borovichok</td>
+						<td>Возраст - 3 года</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Молька</td>
+						<td>/laskovie-koshki-i-kotyata/8519-molka</td>
+						<td>Возраст - 1 год</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Крутон</td>
+						<td>/laskovie-koshki-i-kotyata/8517-kruton</td>
+						<td>Возраст - 2 года</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Колосок</td>
+						<td>/laskovie-koshki-i-kotyata/8509-kolosok</td>
+						<td>Возраст - 2 года</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Руфус</td>
+						<td>/laskovie-koshki-i-kotyata/8505-rufus</td>
+						<td>Возраст - 3 года</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Алафа</td>
+						<td>/laskovie-koshki-i-kotyata/8503-alafa</td>
+						<td>Возраст - 12 лет</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Мунечка</td>
+						<td>/laskovie-koshki-i-kotyata/8496-munechka</td>
+						<td>Возраст - 3 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Нянкэт</td>
+						<td>/laskovie-koshki-i-kotyata/8492-nyanket</td>
+						<td>Возраст - 2 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Брина</td>
+						<td>/laskovie-koshki-i-kotyata/8485-brina</td>
+						<td>Возраст - 6 лет</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Вермонт</td>
+						<td>/laskovie-koshki-i-kotyata/8481-vermont</td>
+						<td>Возраст - 8 лет</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Воробышек</td>
+						<td>/laskovie-koshki-i-kotyata/8479-vorobyshek</td>
+						<td>Возраст - 7 лет</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Антон</td>
+						<td>/laskovie-koshki-i-kotyata/8476-anton</td>
+						<td>Возраст - 6 лет</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Парсик</td>
+						<td>/laskovie-koshki-i-kotyata/8469-parsik</td>
+						<td>Возраст - 1 год</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Капучино</td>
+						<td>/laskovie-koshki-i-kotyata/8466-kapuchino</td>
+						<td>Возраст - 8 лет</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Никитис</td>
+						<td>/laskovie-koshki-i-kotyata/8464-nikitis</td>
+						<td>Возраст - 3 года</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Марсельеза</td>
+						<td>/laskovie-koshki-i-kotyata/8462-marseleza</td>
+						<td>Возраст - 5 лет</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Трифон</td>
+						<td>/laskovie-koshki-i-kotyata/8460-trifon</td>
+						<td>Возраст - 3 года</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Урсик</td>
+						<td>/laskovie-koshki-i-kotyata/8458-ursik</td>
+						<td>Возраст - 5 лет</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Архип</td>
+						<td>/laskovie-koshki-i-kotyata/8455-arkhip</td>
+						<td>Возраст - 1 год</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Флёрдоранж</td>
+						<td>/laskovie-koshki-i-kotyata/8447-fljordoranzh</td>
+						<td>Возраст - 5 лет</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Шипуха</td>
+						<td>/laskovie-koshki-i-kotyata/8437-shipukha</td>
+						<td>Возраст - 2 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Леди Макбет</td>
+						<td>/laskovie-koshki-i-kotyata/8433-ledi-makbet</td>
+						<td>Возраст - 5 лет</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Мелания</td>
+						<td>/laskovie-koshki-i-kotyata/8424-melaniya</td>
+						<td>Возраст - 4 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Феличита</td>
+						<td>/laskovie-koshki-i-kotyata/8418-felichita</td>
+						<td>Возраст - 2 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Анджелина</td>
+						<td>/laskovie-koshki-i-kotyata/8523-andzhelina</td>
+						<td>Возраст - 3 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Луиса</td>
+						<td>/laskovie-koshki-i-kotyata/8520-luisa</td>
+						<td>Возраст - 5 лет</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Шенди</td>
+						<td>/laskovie-koshki-i-kotyata/8518-shendi</td>
+						<td>Возраст - 2 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Умелец</td>
+						<td>/laskovie-koshki-i-kotyata/8510-umelets</td>
+						<td>Возраст - 3 года</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Бугага</td>
+						<td>/laskovie-koshki-i-kotyata/8506-bugaga</td>
+						<td>Возраст - 2 года</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Бастет</td>
+						<td>/laskovie-koshki-i-kotyata/8504-bastet</td>
+						<td>Возраст - 12 лет</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Фарсук</td>
+						<td>/laskovie-koshki-i-kotyata/8497-farsuk</td>
+						<td>Возраст - 2 года</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Манифик</td>
+						<td>/laskovie-koshki-i-kotyata/8493-manifik</td>
+						<td>Возраст - 7 лет</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Сержик</td>
+						<td>/laskovie-koshki-i-kotyata/8486-serzhik</td>
+						<td>Возраст - 2 года</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Ариэль</td>
+						<td>/laskovie-koshki-i-kotyata/8482-ariel</td>
+						<td>Возраст - 1 год</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Метель</td>
+						<td>/laskovie-koshki-i-kotyata/8480-metel</td>
+						<td>Возраст - 3 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Патиссон</td>
+						<td>/laskovie-koshki-i-kotyata/8478-patisson</td>
+						<td>Возраст - 10 лет</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Изабелла</td>
+						<td>/laskovie-koshki-i-kotyata/8474-izabella</td>
+						<td>Возраст - 5 лет</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Пайпер</td>
+						<td>/laskovie-koshki-i-kotyata/8467-pajper</td>
+						<td>Возраст - 8 лет</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Таша</td>
+						<td>/laskovie-koshki-i-kotyata/8465-tasha</td>
+						<td>Возраст - 11 лет</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Муфточка</td>
+						<td>/laskovie-koshki-i-kotyata/8463-muftochka</td>
+						<td>Возраст - 3 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Элвис</td>
+						<td>/laskovie-koshki-i-kotyata/8461-elvis</td>
+						<td>Возраст - 1 год</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Бузина</td>
+						<td>/laskovie-koshki-i-kotyata/8459-buzina</td>
+						<td>Возраст - 3 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Галя</td>
+						<td>/laskovie-koshki-i-kotyata/8457-galya</td>
+						<td>Возраст - 1 год</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Иоффе</td>
+						<td>/laskovie-koshki-i-kotyata/8448-ioffe</td>
+						<td>Возраст - 3 года</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Маслинка</td>
+						<td>/laskovie-koshki-i-kotyata/8446-maslinka</td>
+						<td>Возраст - 4 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Ферреро</td>
+						<td>/laskovie-koshki-i-kotyata/8434-ferrero</td>
+						<td>Возраст - 2 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Пелвис</td>
+						<td>/laskovie-koshki-i-kotyata/8431-pelvis</td>
+						<td>Возраст - 1 год</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Нежа</td>
+						<td>/laskovie-koshki-i-kotyata/8420-nezha</td>
+						<td>Возраст - 5 лет</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Златиша</td>
+						<td>/laskovie-koshki-i-kotyata/8417-zlatisha</td>
+						<td>Возраст - 4 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Добряк</td>
+						<td>/laskovie-koshki-i-kotyata/8416-dobryak</td>
+						<td>Возраст - 8 лет</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Пеструха</td>
+						<td>/laskovie-koshki-i-kotyata/8406-pestrukha</td>
+						<td>Возраст - 1 год</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Пчелка</td>
+						<td>/laskovie-koshki-i-kotyata/8403-pchelka</td>
+						<td>Возраст - 1 год</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Киана</td>
+						<td>/laskovie-koshki-i-kotyata/8394-kiana</td>
+						<td>Возраст - 2 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Малдер</td>
+						<td>/laskovie-koshki-i-kotyata/8386-malder</td>
+						<td>Возраст - 2 года</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Мюнхгаузен</td>
+						<td>/laskovie-koshki-i-kotyata/8359-myunkhgauzen</td>
+						<td>Возраст - 4 года</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Кассиопея</td>
+						<td>/laskovie-koshki-i-kotyata/8332-kassiopeya</td>
+						<td>Возраст - 4 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Дэбби</td>
+						<td>/laskovie-koshki-i-kotyata/8319-debbi</td>
+						<td>Возраст - 2 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Кэрри</td>
+						<td>/laskovie-koshki-i-kotyata/8313-kerri</td>
+						<td>Возраст - 3 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Агриппина</td>
+						<td>/laskovie-koshki-i-kotyata/8311-agrippina</td>
+						<td>Возраст - 5 лет</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Даниэла</td>
+						<td>/laskovie-koshki-i-kotyata/8170-daniela</td>
+						<td>Возраст - 1 год</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Мира</td>
+						<td>/laskovie-koshki-i-kotyata/8095-mira</td>
+						<td>Возраст - 2 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Беатриче</td>
+						<td>/laskovie-koshki-i-kotyata/7668-beatriche</td>
+						<td>Возраст - 3 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Бенни Хилл</td>
+						<td>/laskovie-koshki-i-kotyata/8414-benni-khill</td>
+						<td>Возраст - 2 года</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Стенли</td>
+						<td>/laskovie-koshki-i-kotyata/8404-stenli</td>
+						<td>Возраст - 5 лет</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Авдотья</td>
+						<td>/laskovie-koshki-i-kotyata/8395-avdotya</td>
+						<td>Возраст - 5 лет</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Айно</td>
+						<td>/kotyata/8388-ajno</td>
+						<td>Возраст - 6 месяцев</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Ева</td>
+						<td>/laskovie-koshki-i-kotyata/8376-eva</td>
+						<td>Возраст - 2 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Корасон</td>
+						<td>/laskovie-koshki-i-kotyata/8358-korason</td>
+						<td>Возраст - 5 лет</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Даша</td>
+						<td>/laskovie-koshki-i-kotyata/8328-dasha</td>
+						<td>Возраст - 5 лет</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Василиск</td>
+						<td>/laskovie-koshki-i-kotyata/8317-vasilisk</td>
+						<td>Возраст - 6 лет</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Вероника</td>
+						<td>/laskovie-koshki-i-kotyata/8312-veronika</td>
+						<td>Возраст - 4 года</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Майкл</td>
+						<td>/laskovie-koshki-i-kotyata/8237-majkl</td>
+						<td>Возраст - 5 лет</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Каштан</td>
+						<td>/kotyata/8120-kashtan</td>
+						<td>Возраст - 10 месяцев</td>
+						<td>Кот</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td>Телла</td>
+						<td>/laskovie-koshki-i-kotyata/7793-tella</td>
+						<td>Возраст - 8 лет</td>
+						<td>Кошка</td>
+						<td>Есть ветпаспорт</td>
+						<td>Знает лоточек</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>&nbsp</td>
+						<td>&nbsp</td>
+						<td>&nbsp</td>
+						<td>&nbsp</td>
+						<td>&nbsp</td>
+					</tr>
+				</tbody>
+			</table>
+    </div>
+
+</body>
+</html>
